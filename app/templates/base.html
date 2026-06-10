@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krutaya stranica</title>
+    {% block links %} 
+    {% endblock %}
+</head>
+<body>
+    <header>
+        <a href="/">Головна</a>
+        <a href="/Nikita">Страница Никиты</a>
+        <a href="/Nazar">Страница Назара</a>
+        <a href="/Polina">Страница Полины</a>
+        <a href="/Egor">Страница Егора</a>
+        <a href="/Rostik">Страница Ростика</a>
+    </header>
+
+    
+    <main>
+        {% block content %} 
+        {% endblock %}
+    </main>
+
+    <footer>
+        {% block footer %} 
+        {% endblock %}
+    </footer>
+    
+    {% block scripts %} 
+    {% endblock %}
+</body>
+</html>

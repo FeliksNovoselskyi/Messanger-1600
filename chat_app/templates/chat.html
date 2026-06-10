@@ -1,16 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="{{ url_for('chat.static', filename='css/style.css') }}">
-</head>
-<body>
-    <p>Paragraph</p>
+{% extends "base.html" %}
 
+{% block links %} 
+    <link href= "{{ url_for('chat.static', filename='css/style.css')}}">
+{% endblock %}
+
+{% block aboba %}
+    <!-- Егор. Создать контейнер с параграфом внутри -->
     <div>
-        <h1>Header in container</h1>
+        <p>Днепр</p>
     </div>
-</body>
-</html>
+
+    <!-- Назар.  Создать параграф с любім текстом -->
+    <p>Chargoggagoggmanchauggagoggchaubunagungamaugg</p>
+    <!-- Создать ссылку -->
+    <a href = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEedBMuaHImZBADRQsa5r77QKaPicnIFagb9ajPp-l6Rnx4WibzAxVn9tQ&s=10">Free robux</a>
+{% endblock %}
