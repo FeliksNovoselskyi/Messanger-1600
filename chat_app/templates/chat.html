@@ -1,17 +1,19 @@
 {% extends "base.html" %}
 
 {% block links %} 
-    <link href= "{{ url_for('chat.static', filename='css/style.css')}}">
+    <link rel="stylesheet" href= "{{ url_for('chat.static', filename='css/style.css')}}">
 {% endblock %}
 
-{% block aboba %}
-    <!-- Егор. Создать контейнер с параграфом внутри -->
-    <div>
-        <p>Днепр</p>
+{% block content %}
+    <!-- first-paragraph -->
+    <div class = "standard-container" >
+        <p id = "first-paragraph">Днепр</p>
+    </div>
+    <div class = "standard-container">
+        <p>Днепр2</p>
     </div>
 
-    <!-- Назар.  Создать параграф с любім текстом -->
     <p>Chargoggagoggmanchauggagoggchaubunagungamaugg</p>
-    <!-- Создать ссылку -->
+
     <a href = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEedBMuaHImZBADRQsa5r77QKaPicnIFagb9ajPp-l6Rnx4WibzAxVn9tQ&s=10">Free robux</a>
 {% endblock %}

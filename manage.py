@@ -1,7 +1,11 @@
 from app.settings import main_app
+from app.loadenv import migration
 
 def main():
     try:
+        
+        migration()
+        
         main_app.run(
             debug = True,
             port = 8000

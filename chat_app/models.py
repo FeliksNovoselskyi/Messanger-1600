@@ -7,3 +7,6 @@ class User(DB.Model):
     # Тип поля указываем первым
     id = DB.Column(DB.Integer, primary_key = True)
     email = DB.Column(DB.String)
+    
+    # password
+    password = DB.Column(DB.String)
